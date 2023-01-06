@@ -1,0 +1,6 @@
+schema: ./src/infrastructure/graphql/typeDefs/index.ts
+generates:
+  src/infrastructure/graphql/resolvers/resolvers.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers

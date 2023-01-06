@@ -1,0 +1,10 @@
+schema: ../serverless/src/infrastructure/graphql/typeDefs/index.ts
+documents:
+  - ./graphql/operations/*.ts
+  - ./graphql/fragments/*.ts
+generates:
+  ./graphql/gql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
